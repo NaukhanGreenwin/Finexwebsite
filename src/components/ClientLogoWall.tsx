@@ -54,10 +54,6 @@ export function ClientLogoWall() {
                           console.log(`Successfully loaded: ${client.logoSrc}`);
                         }}
                       />
-                      {/* Fallback text */}
-                      <div className="absolute inset-0 flex items-center justify-center text-xs text-muted-foreground opacity-20 pointer-events-none">
-                        {client.name}
-                      </div>
                     </div>
                   </div>
                 </Link>
@@ -76,10 +72,6 @@ export function ClientLogoWall() {
                         console.log(`Successfully loaded: ${client.logoSrc}`);
                       }}
                     />
-                      {/* Fallback text */}
-                      <div className="absolute inset-0 flex items-center justify-center text-xs text-muted-foreground opacity-20 pointer-events-none">
-                        {client.name}
-                      </div>
                   </div>
                 </div>
               )}

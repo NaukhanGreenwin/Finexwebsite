@@ -105,7 +105,7 @@ export function SiteHeader() {
                         handleNavClick(item.href);
                       }
                     }}
-                    className="relative px-4 py-2 text-sm font-medium text-muted-foreground hover:text-slate-blue transition-all duration-300 rounded-lg hover:bg-slate-blue/5 group"
+                    className="relative px-4 py-2 text-sm font-bold text-muted-foreground hover:text-slate-blue transition-all duration-300 rounded-lg hover:bg-slate-blue/5 group"
                   >
                     {item.name}
                     <span className="absolute inset-x-4 -bottom-px h-px bg-gradient-to-r from-transparent via-slate-blue to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -200,7 +200,7 @@ export function SiteHeader() {
                           }
                           handleNavClick(item.href);
                         }}
-                        className="flex items-center justify-between py-3 px-4 text-sm font-medium text-muted-foreground hover:text-slate-blue hover:bg-slate-blue/5 rounded-lg transition-all duration-300 group"
+                        className="flex items-center justify-between py-3 px-4 text-sm font-bold text-muted-foreground hover:text-slate-blue hover:bg-slate-blue/5 rounded-lg transition-all duration-300 group"
                       >
                         <span>{item.name}</span>
                         <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "jumpstart",
+    "title": "Canadian Tire Jumpstart",
+    "body": "At Jumpstart, we are committed to ensuring kids in need have equal access to sports and physical activity – an equal chance to be their best.",
+    "image": "/images/sponsors/canadian-tire-jumpstart.avif"
+  },
+  {
+    "id": "st-matthew",
+    "title": "St. Matthew School",
+    "body": "St. Matthew Catholic Elementary School is an exciting place to learn and grow for children from Junior Kindergarten to the 8th grade!",
+    "image": "/images/sponsors/96348a_5795e38cf6cf469da1bbbf47918e49d3~mv2.avif"
+  },
+  {
+    "id": "royal-canadian-legion",
+    "title": "Royal Canadian Legion",
+    "body": "Royal Canadian Legion is committed to making a difference in the lives of Veterans and their families, providing essential services in our communities, and remembering the men who sacrificed for our country.",
+    "image": "/images/sponsors/96348a_86dcf4406e93412baa2944f65f547ec1~mv2.gif"
+  },
+  {
+    "id": "hospital-activity-book",
+    "title": "Hospital Activity Book",
+    "body": "The Hospital Activity Book has been successful for over 23 years with well over one million copies of the book provided to children across Canada in this time.",
+    "image": "/images/sponsors/ok.avif"
+  }
+]

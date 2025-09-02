@@ -1,0 +1,62 @@
+[
+  {
+    "id": "plumbing",
+    "title": "Plumbing Services",
+    "icon": "wrench",
+    "blurb": "Complete plumbing solutions for residential and commercial properties including repairs, installations, and maintenance."
+  },
+  {
+    "id": "handyman",
+    "title": "Handyman Works",
+    "icon": "hammer",
+    "blurb": "Professional handyman services for all your repair and maintenance needs around your property."
+  },
+  {
+    "id": "electrical",
+    "title": "Electrical Services",
+    "icon": "zap",
+    "blurb": "Licensed electrical work including wiring, installations, repairs, and safety inspections."
+  },
+  {
+    "id": "carpentry",
+    "title": "Carpentry",
+    "icon": "square",
+    "blurb": "Custom carpentry work from small repairs to complete installations and renovations."
+  },
+  {
+    "id": "flooring",
+    "title": "Flooring",
+    "icon": "layers",
+    "blurb": "Professional flooring installation and repair services for all types of flooring materials."
+  },
+  {
+    "id": "painting",
+    "title": "Painting",
+    "icon": "paintbrush",
+    "blurb": "Interior and exterior painting services with quality materials and professional finish."
+  },
+  {
+    "id": "drywall",
+    "title": "Drywall & Plaster",
+    "icon": "wall",
+    "blurb": "Expert drywall installation, repair, and plastering services for smooth, professional results."
+  },
+  {
+    "id": "hvac",
+    "title": "HVAC Services",
+    "icon": "thermometer",
+    "blurb": "Heating, ventilation, and air conditioning services including installation and maintenance."
+  },
+  {
+    "id": "landscaping",
+    "title": "Landscaping",
+    "icon": "tree",
+    "blurb": "Complete landscaping services to enhance and maintain your outdoor spaces."
+  },
+  {
+    "id": "restoration",
+    "title": "Restoration",
+    "icon": "refresh-cw",
+    "blurb": "Professional restoration services to bring your property back to its original condition."
+  }
+]

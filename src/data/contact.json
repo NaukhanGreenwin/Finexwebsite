@@ -1,0 +1,39 @@
+{
+  "address": {
+    "street": "2179 Dunwin Drive, Unit #2",
+    "city": "Mississauga",
+    "province": "ON",
+    "postalCode": "L5L 1X2",
+    "country": "Canada"
+  },
+  "phones": [
+    {
+      "type": "main",
+      "number": "(905) 555-0123",
+      "label": "Main Office"
+    },
+    {
+      "type": "emergency",
+      "number": "(905) 555-0124",
+      "label": "24/7 Emergency"
+    }
+  ],
+  "emails": [
+    {
+      "type": "general",
+      "address": "info@finexdevelopment.com",
+      "label": "General Inquiries"
+    },
+    {
+      "type": "quotes",
+      "address": "quotes@finexdevelopment.com",
+      "label": "Project Quotes"
+    }
+  ],
+  "hours": {
+    "weekdays": "8:00 AM - 6:00 PM",
+    "weekends": "9:00 AM - 4:00 PM",
+    "emergency": "24/7 Available"
+  },
+  "quote": "Get your free consultation and quote today!"
+}

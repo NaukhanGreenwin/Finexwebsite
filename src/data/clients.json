@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Calvin Klein",
+    "logoSrc": "/images/clients/calvin-klein.png",
+    "href": "https://calvinklein.com"
+  },
+  {
+    "name": "Canadian Tire",
+    "logoSrc": "/images/clients/canadian-tire.png",
+    "href": "https://canadiantire.ca"
+  },
+  {
+    "name": "Jack & Jones",
+    "logoSrc": "/images/clients/jack-jones.png",
+    "href": "https://jackjones.com"
+  },
+  {
+    "name": "Marks",
+    "logoSrc": "/images/clients/marks.png",
+    "href": "https://marks.com"
+  },
+  {
+    "name": "Moores",
+    "logoSrc": "/images/clients/moores.png",
+    "href": "https://mooresclothing.com"
+  },
+  {
+    "name": "National Sports",
+    "logoSrc": "/images/clients/national.png",
+    "href": "#"
+  },
+  {
+    "name": "PartSource",
+    "logoSrc": "/images/clients/part-source.png",
+    "href": "https://partsource.ca"
+  },
+  {
+    "name": "Sport Chek",
+    "logoSrc": "/images/clients/sport-check.png",
+    "href": "https://sportchek.ca"
+  },
+  {
+    "name": "Tommy Hilfiger",
+    "logoSrc": "/images/clients/tommy-hilfiger.png",
+    "href": "https://tommy.com"
+  },
+  {
+    "name": "Vans",
+    "logoSrc": "/images/clients/vans.png",
+    "href": "https://vans.com"
+  }
+]

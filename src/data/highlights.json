@@ -1,0 +1,38 @@
+[
+  {
+    "id": "integrated-facilities",
+    "title": "Integrated Facilities Management",
+    "body": "Comprehensive facility management solutions that streamline operations and reduce costs. Our integrated approach ensures all your facility needs are managed efficiently under one roof, providing seamless coordination and exceptional service delivery.",
+    "image": "/images/highlights/Integrated Facilities Management.jpg",
+    "features": [
+      "24/7 monitoring and support",
+      "Preventive maintenance programs",
+      "Cost optimization strategies",
+      "Single point of contact"
+    ]
+  },
+  {
+    "id": "on-the-go",
+    "title": "On-The-Go Maintenance",
+    "body": "Rapid response maintenance services designed for urgent repairs and immediate needs. Our mobile teams are equipped to handle emergency situations quickly and efficiently, minimizing downtime and ensuring business continuity.",
+    "image": "/images/highlights/On-The-Go Maintenance.jpg",
+    "features": [
+      "Emergency response team",
+      "Mobile service units",
+      "Same-day service availability",
+      "Fully equipped technicians"
+    ]
+  },
+  {
+    "id": "preventative",
+    "title": "Preventative Maintenance & Inspections",
+    "body": "Proactive maintenance programs that prevent costly breakdowns and extend equipment life. Our systematic approach to inspections and maintenance helps identify potential issues before they become major problems.",
+    "image": "/images/highlights/Preventative Maintenance and Inspections.jpg",
+    "features": [
+      "Scheduled maintenance programs",
+      "Detailed inspection reports",
+      "Equipment lifecycle management",
+      "Cost-effective solutions"
+    ]
+  }
+]

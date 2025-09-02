@@ -1,0 +1,15 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Host
+Host: https://finexdevelopment.com
+
+# Sitemaps
+Sitemap: https://finexdevelopment.com/sitemap.xml

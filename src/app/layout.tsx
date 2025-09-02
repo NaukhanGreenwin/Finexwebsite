@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "Finex Development",
     images: [
       {
-        url: "/og?title=Leaders in Construction & Facility Maintenance&subtitle=Professional services in Mississauga, ON",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Finex Development - Leaders in Construction & Facility Maintenance",

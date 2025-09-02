@@ -40,13 +40,13 @@ export function ClientLogoWall() {
                   rel="noopener noreferrer"
                   className="block w-full h-full"
                 >
-                  <div className="bg-background rounded-lg p-4 border border-border/50 hover:border-primary/20 hover:shadow-lg transition-all duration-300 h-28 w-full flex items-center justify-center">
+                  <div className="h-20 w-full flex items-center justify-center group-hover:scale-110 transition-all duration-300">
                     <div className="relative flex items-center justify-center w-full h-full">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={client.logoSrc}
                         alt={`${client.name} logo`}
-                        className="max-w-full max-h-full object-contain transition-all duration-300"
+                        className="max-w-full max-h-full object-contain transition-all duration-300 filter grayscale hover:grayscale-0 opacity-70 hover:opacity-100"
                         onError={(e) => {
                           console.error(`Failed to load image: ${client.logoSrc}`, e);
                         }}
@@ -62,13 +62,13 @@ export function ClientLogoWall() {
                   </div>
                 </Link>
               ) : (
-                <div className="bg-background rounded-lg p-4 border border-border/50 hover:border-primary/20 hover:shadow-lg transition-all duration-300 h-28 w-full flex items-center justify-center">
+                <div className="h-20 w-full flex items-center justify-center group-hover:scale-110 transition-all duration-300">
                   <div className="relative flex items-center justify-center w-full h-full">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={client.logoSrc}
                       alt={`${client.name} logo`}
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 filter grayscale hover:grayscale-0 opacity-70 hover:opacity-100"
                       onError={(e) => {
                         console.error(`Failed to load image: ${client.logoSrc}`, e);
                       }}

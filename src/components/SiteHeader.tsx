@@ -9,11 +9,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Our Credo", href: "#credo" },
+  { name: "About", href: "/#about" },
+  { name: "Services", href: "/#services" },
+  { name: "Our Credo", href: "/#credo" },
   { name: "From CEO", href: "/ceo" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 export function SiteHeader() {
@@ -32,10 +32,25 @@ export function SiteHeader() {
   const handleNavClick = (href: string) => {
     setIsMobileMenuOpen(false);
     
+    // Handle hash-only anchors (for same page navigation)
     if (href.startsWith("#")) {
       const element = document.querySelector(href);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    // Handle full URLs with hashes (for cross-page navigation)
+    else if (href.includes("#")) {
+      const [path, hash] = href.split("#");
+      if (window.location.pathname !== path) {
+        // Navigate to the page first, then scroll to the section
+        window.location.href = href;
+      } else {
+        // Same page, just scroll to the section
+        const element = document.querySelector(`#${hash}`);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
       }
     }
   };
@@ -100,7 +115,7 @@ export function SiteHeader() {
                   <Link
                     href={item.href}
                     onClick={(e) => {
-                      if (item.href.startsWith("#")) {
+                      if (item.href.startsWith("#") || item.href.includes("#")) {
                         e.preventDefault();
                         handleNavClick(item.href);
                       }
@@ -120,10 +135,10 @@ export function SiteHeader() {
                 className="ml-6"
               >
                 <Link 
-                  href="#contact" 
+                  href="/#contact" 
                   onClick={(e) => {
                     e.preventDefault();
-                    handleNavClick("#contact");
+                    handleNavClick("/#contact");
                   }}
                   className="inline-flex items-center justify-center font-medium px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group text-white hover:text-white bg-slate-blue hover:bg-slate-blue"
                 >
@@ -195,7 +210,7 @@ export function SiteHeader() {
                       <Link
                         href={item.href}
                         onClick={(e) => {
-                          if (item.href.startsWith("#")) {
+                          if (item.href.startsWith("#") || item.href.includes("#")) {
                             e.preventDefault();
                           }
                           handleNavClick(item.href);
@@ -216,10 +231,10 @@ export function SiteHeader() {
                   className="pt-6 border-t border-border/50 mt-6"
                 >
                   <Link 
-                    href="#contact" 
+                    href="/#contact" 
                     onClick={(e) => {
                       e.preventDefault();
-                      handleNavClick("#contact");
+                      handleNavClick("/#contact");
                     }}
                     className="w-full flex items-center justify-center text-white hover:text-white font-medium py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-slate-blue hover:bg-slate-blue"
                   >

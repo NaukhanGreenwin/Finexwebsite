@@ -92,7 +92,7 @@ export default function CEOPage() {
                   <div className="mt-12 pt-8 border-t border-border/50">
                     <div className="text-center">
                       <p className="mb-2">Sincerely,</p>
-                      <div className="text-xl font-bold text-foreground">John Smith</div>
+                      <div className="text-xl font-bold text-foreground">Peter Fiwek</div>
                       <div className="text-sm text-muted-foreground">Chief Executive Officer</div>
                     </div>
                   </div>

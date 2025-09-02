@@ -1,7 +1,6 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, ArrowRight, ExternalLink } from "lucide-react";
 import contact from "@/data/contact.json";

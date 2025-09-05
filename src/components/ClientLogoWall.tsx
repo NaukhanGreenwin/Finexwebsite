@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import clients from "@/data/clients.json";
+import { getImagePath } from "@/lib/image-utils";
 
 export function ClientLogoWall() {
   return (
@@ -44,7 +45,7 @@ export function ClientLogoWall() {
                     <div className="relative flex items-center justify-center w-full h-full">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src={client.logoSrc}
+                        src={getImagePath(client.logoSrc)}
                         alt={`${client.name} logo`}
                         className="max-w-full max-h-full object-contain transition-all duration-300 filter grayscale hover:grayscale-0 opacity-70 hover:opacity-100"
                         onError={(e) => {

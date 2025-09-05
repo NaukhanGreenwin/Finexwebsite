@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { getImagePath } from "@/lib/image-utils";
 
 const navigation = {
   main: [
@@ -37,7 +38,7 @@ export function SiteFooter() {
             <div className="flex items-center space-x-3 mb-4">
               <div className="h-10 w-10 relative">
                 <Image
-                  src="/images/company-logo.png"
+                  src={getImagePath("/images/company-logo.png")}
                   alt="Finex Development Logo"
                   fill
                   className="object-contain"

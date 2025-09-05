@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { getImagePath } from "@/lib/image-utils";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -85,7 +86,7 @@ export function SiteHeader() {
               <Link href="/" className="flex items-center space-x-4 group">
                 <div className="h-12 w-12 relative rounded-xl bg-gradient-to-br from-slate-blue/10 to-soft-rose/10 p-2 group-hover:from-slate-blue/20 group-hover:to-soft-rose/20 transition-all duration-300">
                   <Image
-                    src="/images/company-logo.png"
+                    src={getImagePath("/images/company-logo.png")}
                     alt="Finex Development Logo"
                     fill
                     className="object-contain p-1"

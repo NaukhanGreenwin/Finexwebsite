@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import Image from "next/image";
 import highlights from "@/data/highlights.json";
+import { getImagePath } from "@/lib/image-utils";
 
 export function ServiceHighlights() {
   const handleScrollToContact = () => {
@@ -51,7 +52,7 @@ export function ServiceHighlights() {
                     index % 2 === 1 ? 'lg:col-start-2' : ''
                   }`}>
                     <Image
-                      src={highlight.image}
+                      src={getImagePath(highlight.image)}
                       alt={`${highlight.title} illustration`}
                       fill
                       className="object-cover"

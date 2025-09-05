@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: process.env.NODE_ENV === 'production' ? '/Finexwebsite' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Finexwebsite/' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Finexwebsite' : '',
   // Fix for GitHub Actions build
   outputFileTracingRoot: process.env.CI ? undefined : '.',
 };

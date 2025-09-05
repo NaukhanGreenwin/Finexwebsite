@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     template: "%s | Finex Development",
   },
   description: "Professional construction and facility maintenance services in Mississauga, ON. Over 20 years of experience with 26,924+ projects completed. Emergency repairs, preventative maintenance, and comprehensive facility management.",
+  icons: {
+    icon: process.env.NODE_ENV === 'production' ? '/Finexwebsite/favicon.png' : '/favicon.png',
+    shortcut: process.env.NODE_ENV === 'production' ? '/Finexwebsite/favicon.png' : '/favicon.png',
+    apple: process.env.NODE_ENV === 'production' ? '/Finexwebsite/favicon.png' : '/favicon.png',
+  },
   keywords: [
     "construction",
     "facility maintenance",

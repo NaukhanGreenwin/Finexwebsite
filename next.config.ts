@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   },
   basePath: process.env.NODE_ENV === 'production' ? '/Finexwebsite' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/Finexwebsite/' : '',
+  // Fix for GitHub Actions build
+  outputFileTracingRoot: process.env.CI ? undefined : '.',
 };
 
 export default nextConfig;

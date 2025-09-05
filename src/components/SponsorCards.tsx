@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import sponsors from "@/data/sponsors.json";
+import { getImagePath } from "@/lib/image-utils";
 
 export function SponsorCards() {
   return (
@@ -83,7 +84,7 @@ export function SponsorCards() {
                     {/* Sponsor Image with modern styling */}
                     <div className={`aspect-square relative rounded-2xl overflow-hidden mb-4 ${colorScheme.imageBg} p-4 flex items-center justify-center shadow-lg border border-white/50 group-hover:scale-105 transition-transform duration-300`}>
                       <Image
-                        src={sponsor.image}
+                        src={getImagePath(sponsor.image)}
                         alt={`${sponsor.title} logo`}
                         fill
                         className="object-contain p-2"

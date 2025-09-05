@@ -47,7 +47,7 @@ export function ClientLogoWall() {
                       <img
                         src={getImagePath(client.logoSrc)}
                         alt={`${client.name} logo`}
-                        className="max-w-full max-h-full object-contain transition-all duration-300 filter grayscale hover:grayscale-0 opacity-70 hover:opacity-100"
+                        className="max-w-full max-h-full object-contain transition-all duration-300 opacity-90 hover:opacity-100"
                         onError={(e) => {
                           console.error(`Failed to load image: ${client.logoSrc}`, e);
                         }}

@@ -7,7 +7,7 @@ import { getImagePath } from "@/lib/image-utils";
 
 export function ClientLogoWall() {
   return (
-    <section id="clients" className="py-20 bg-muted/30">
+    <section id="clients" className="clients-section py-20 bg-muted/30">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

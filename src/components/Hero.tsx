@@ -13,7 +13,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-background via-light-pink/10 to-light-pink/20 py-20 sm:py-32">
+    <section className="hero-section relative overflow-hidden bg-gradient-to-br from-background via-light-pink/10 to-light-pink/20 py-20 sm:py-32">
       <div className="absolute inset-0 bg-grid-pattern opacity-5" />
       
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">

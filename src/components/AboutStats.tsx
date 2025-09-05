@@ -28,7 +28,7 @@ export function AboutStats() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-light-pink/30">
+    <section id="about" className="about-section py-20 bg-light-pink/30">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}

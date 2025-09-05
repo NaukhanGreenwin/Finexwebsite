@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const navigation = {
   main: [
@@ -16,28 +15,6 @@ const navigation = {
   legal: [
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms of Service", href: "/terms-of-service" },
-  ],
-  social: [
-    {
-      name: "Facebook",
-      href: "#",
-      icon: Facebook,
-    },
-    {
-      name: "Twitter",
-      href: "#",
-      icon: Twitter,
-    },
-    {
-      name: "LinkedIn",
-      href: "#",
-      icon: Linkedin,
-    },
-    {
-      name: "Instagram",
-      href: "#",
-      icon: Instagram,
-    },
   ],
 };
 
@@ -75,21 +52,6 @@ export function SiteFooter() {
               service with over two decades of experience. Your trusted partner for 
               quality solutions.
             </p>
-            <div className="flex space-x-4">
-              {navigation.social.map((item) => {
-                const IconComponent = item.icon;
-                return (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="text-muted-foreground hover:text-primary transition-colors duration-200"
-                    aria-label={item.name}
-                  >
-                    <IconComponent className="h-5 w-5" />
-                  </Link>
-                );
-              })}
-            </div>
           </div>
 
           {/* Quick Links */}

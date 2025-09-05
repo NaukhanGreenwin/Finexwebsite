@@ -31,8 +31,16 @@ const iconMap: Record<string, LucideIcon> = {
 
 export function ServicesGrid() {
   return (
-    <section id="services" className="services-section py-24 bg-white">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="services" className="services-section py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 relative overflow-hidden">
+      {/* Dynamic background decorations */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-br from-blue-400/10 to-cyan-300/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-64 h-64 bg-gradient-to-br from-pink-400/10 to-rose-300/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-gradient-to-br from-emerald-300/8 to-teal-300/8 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-40 right-1/3 w-56 h-56 bg-gradient-to-br from-purple-400/10 to-violet-300/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '3s'}}></div>
+      </div>
+      
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -40,10 +48,10 @@ export function ServicesGrid() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl mb-6">
+          <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent sm:text-4xl md:text-5xl mb-6">
             Our Services
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto px-4 sm:px-0 font-medium">
             Comprehensive construction and maintenance services tailored to meet your specific needs
           </p>
         </motion.div>
@@ -52,47 +60,57 @@ export function ServicesGrid() {
           {services.map((service, index) => {
             const IconComponent = iconMap[service.icon] || Wrench;
             
-            // Define static color schemes for each service
+            // Modern vibrant color schemes for each service
             const colorSchemes = [
               { 
-                bg: "bg-slate-blue/10", 
-                hoverBg: "bg-slate-blue/20", 
-                icon: "text-slate-blue", 
-                hoverTitle: "group-hover:text-slate-blue",
-                border: "hover:border-slate-blue/30",
-                accent: "bg-slate-blue"
+                cardBg: "bg-gradient-to-br from-blue-500/10 via-cyan-400/5 to-blue-600/10",
+                iconBg: "bg-gradient-to-br from-blue-500 to-cyan-400", 
+                hoverIconBg: "bg-gradient-to-br from-blue-600 to-cyan-500",
+                icon: "text-white", 
+                hoverTitle: "group-hover:text-blue-600",
+                border: "border-blue-200 hover:border-blue-400",
+                accent: "bg-gradient-to-r from-blue-500 to-cyan-400",
+                shadow: "hover:shadow-blue-200/50"
               },
               { 
-                bg: "bg-soft-rose/10", 
-                hoverBg: "bg-soft-rose/20", 
-                icon: "text-soft-rose", 
-                hoverTitle: "group-hover:text-soft-rose",
-                border: "hover:border-soft-rose/30",
-                accent: "bg-soft-rose"
+                cardBg: "bg-gradient-to-br from-pink-500/10 via-rose-400/5 to-pink-600/10",
+                iconBg: "bg-gradient-to-br from-pink-500 to-rose-400", 
+                hoverIconBg: "bg-gradient-to-br from-pink-600 to-rose-500",
+                icon: "text-white", 
+                hoverTitle: "group-hover:text-pink-600",
+                border: "border-pink-200 hover:border-pink-400",
+                accent: "bg-gradient-to-r from-pink-500 to-rose-400",
+                shadow: "hover:shadow-pink-200/50"
               },
               { 
-                bg: "bg-bright-red/10", 
-                hoverBg: "bg-bright-red/20", 
-                icon: "text-bright-red", 
-                hoverTitle: "group-hover:text-bright-red",
-                border: "hover:border-bright-red/30",
-                accent: "bg-bright-red"
+                cardBg: "bg-gradient-to-br from-red-500/10 via-orange-400/5 to-red-600/10",
+                iconBg: "bg-gradient-to-br from-red-500 to-orange-400", 
+                hoverIconBg: "bg-gradient-to-br from-red-600 to-orange-500",
+                icon: "text-white", 
+                hoverTitle: "group-hover:text-red-600",
+                border: "border-red-200 hover:border-red-400",
+                accent: "bg-gradient-to-r from-red-500 to-orange-400",
+                shadow: "hover:shadow-red-200/50"
               },
               { 
-                bg: "bg-deep-maroon/10", 
-                hoverBg: "bg-deep-maroon/20", 
-                icon: "text-deep-maroon", 
-                hoverTitle: "group-hover:text-deep-maroon",
-                border: "hover:border-deep-maroon/30",
-                accent: "bg-deep-maroon"
+                cardBg: "bg-gradient-to-br from-emerald-500/10 via-teal-400/5 to-emerald-600/10",
+                iconBg: "bg-gradient-to-br from-emerald-500 to-teal-400", 
+                hoverIconBg: "bg-gradient-to-br from-emerald-600 to-teal-500",
+                icon: "text-white", 
+                hoverTitle: "group-hover:text-emerald-600",
+                border: "border-emerald-200 hover:border-emerald-400",
+                accent: "bg-gradient-to-r from-emerald-500 to-teal-400",
+                shadow: "hover:shadow-emerald-200/50"
               },
               { 
-                bg: "bg-bright-magenta/10", 
-                hoverBg: "bg-bright-magenta/20", 
-                icon: "text-bright-magenta", 
-                hoverTitle: "group-hover:text-bright-magenta",
-                border: "hover:border-bright-magenta/30",
-                accent: "bg-bright-magenta"
+                cardBg: "bg-gradient-to-br from-purple-500/10 via-violet-400/5 to-purple-600/10",
+                iconBg: "bg-gradient-to-br from-purple-500 to-violet-400", 
+                hoverIconBg: "bg-gradient-to-br from-purple-600 to-violet-500",
+                icon: "text-white", 
+                hoverTitle: "group-hover:text-purple-600",
+                border: "border-purple-200 hover:border-purple-400",
+                accent: "bg-gradient-to-r from-purple-500 to-violet-400",
+                shadow: "hover:shadow-purple-200/50"
               }
             ];
             
@@ -108,19 +126,27 @@ export function ServicesGrid() {
                 whileHover={{ y: -8 }}
                 className="group cursor-pointer"
               >
-                <div className={`bg-white rounded-2xl border border-gray-100 ${colorScheme.border} shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden h-full relative`}>
-                  {/* Colored accent bar */}
-                  <div className={`h-1 w-full ${colorScheme.accent}`}></div>
+                <div className={`${colorScheme.cardBg} rounded-3xl border-2 ${colorScheme.border} shadow-lg ${colorScheme.shadow} hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden h-full relative backdrop-blur-sm`}>
+                  {/* Vibrant accent bar */}
+                  <div className={`h-2 w-full ${colorScheme.accent} shadow-sm`}></div>
                   
-                  {/* Clean Icon Section */}
-                  <div className="p-8 text-center">
-                    <div className={`w-16 h-16 mx-auto ${colorScheme.bg} group-hover:${colorScheme.hoverBg} rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300`}>
-                      <IconComponent className={`h-8 w-8 ${colorScheme.icon}`} />
+                  {/* Modern Icon Section */}
+                  <div className="p-8 text-center relative">
+                    {/* Subtle background pattern */}
+                    <div className="absolute inset-0 opacity-5">
+                      <div className="w-full h-full bg-gradient-to-br from-gray-900 to-transparent"></div>
                     </div>
-                    <h3 className={`text-lg font-semibold text-gray-900 mb-3 ${colorScheme.hoverTitle} transition-colors duration-300`}>
+                    
+                    <div className={`w-20 h-20 mx-auto ${colorScheme.iconBg} group-hover:${colorScheme.hoverIconBg} rounded-3xl flex items-center justify-center mb-6 transition-all duration-500 shadow-xl transform group-hover:scale-110 group-hover:rotate-3 relative z-10`}>
+                      <IconComponent className={`h-10 w-10 ${colorScheme.icon} drop-shadow-lg`} />
+                      {/* Icon glow effect */}
+                      <div className={`absolute inset-0 ${colorScheme.iconBg} rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500`}></div>
+                    </div>
+                    
+                    <h3 className={`text-xl font-bold text-gray-900 mb-4 ${colorScheme.hoverTitle} transition-all duration-300 relative z-10`}>
                       {service.title}
                     </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm text-gray-700 leading-relaxed font-medium relative z-10">
                       {service.blurb}
                     </p>
                   </div>

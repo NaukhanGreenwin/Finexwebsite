@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { JsonLd, organizationJsonLd, localBusinessJsonLd } from "@/components/JsonLd";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { PerformanceMonitor } from "@/components/PerformanceMonitor";
 
-const openSans = Open_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-open-sans",
+  variable: "--font-inter",
   display: "swap",
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -82,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={openSans.variable}>
+    <html lang="en" className={inter.variable}>
       <body className="font-sans antialiased">
         <JsonLd data={organizationJsonLd} />
         <JsonLd data={localBusinessJsonLd} />

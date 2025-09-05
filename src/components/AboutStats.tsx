@@ -28,8 +28,13 @@ export function AboutStats() {
   ];
 
   return (
-    <section id="about" className="about-section py-20 bg-light-pink/30">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="about" className="about-section py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/50 relative overflow-hidden">
+      {/* Background decorations */}
+      <div className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-cyan-300/20 rounded-full blur-xl" />
+      <div className="absolute bottom-10 left-10 w-40 h-40 bg-gradient-to-br from-pink-400/20 to-rose-300/20 rounded-full blur-xl" />
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-br from-emerald-300/10 to-teal-300/10 rounded-full blur-2xl" />
+      
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <motion.div
@@ -75,11 +80,29 @@ export function AboutStats() {
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               
-              // Use different colors from the palette for each stat
+              // Use bright, vibrant colors for each stat
               const colorOptions = [
-                { bg: "bg-slate-blue/20", icon: "text-slate-blue", border: "border-slate-blue/30" },
-                { bg: "bg-soft-rose/20", icon: "text-soft-rose", border: "border-soft-rose/30" },
-                { bg: "bg-bright-red/20", icon: "text-bright-red", border: "border-bright-red/30" }
+                { 
+                  bg: "bg-gradient-to-br from-blue-500 to-cyan-400", 
+                  icon: "text-white", 
+                  border: "border-blue-400/50",
+                  cardBg: "bg-gradient-to-br from-blue-50 to-cyan-50",
+                  shadow: "shadow-blue-200/50"
+                },
+                { 
+                  bg: "bg-gradient-to-br from-pink-500 to-rose-400", 
+                  icon: "text-white", 
+                  border: "border-pink-400/50",
+                  cardBg: "bg-gradient-to-br from-pink-50 to-rose-50",
+                  shadow: "shadow-pink-200/50"
+                },
+                { 
+                  bg: "bg-gradient-to-br from-emerald-500 to-teal-400", 
+                  icon: "text-white", 
+                  border: "border-emerald-400/50",
+                  cardBg: "bg-gradient-to-br from-emerald-50 to-teal-50",
+                  shadow: "shadow-emerald-200/50"
+                }
               ];
               
               const colors = colorOptions[index % colorOptions.length];
@@ -92,20 +115,20 @@ export function AboutStats() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className={`hover:shadow-lg transition-all duration-300 border ${colors.border}`}>
+                  <Card className={`hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 ${colors.border} ${colors.cardBg} ${colors.shadow} hover:shadow-lg`}>
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
-                        <div className={`w-12 h-12 ${colors.bg} rounded-lg flex items-center justify-center`}>
-                          <IconComponent className={`h-6 w-6 ${colors.icon}`} />
+                        <div className={`w-16 h-16 ${colors.bg} rounded-xl flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300`}>
+                          <IconComponent className={`h-8 w-8 ${colors.icon} drop-shadow-sm`} />
                         </div>
                         <div className="flex-1">
-                          <div className="text-2xl font-bold text-foreground">
+                          <div className="text-3xl font-bold text-foreground mb-1">
                             {stat.value}
                           </div>
-                          <div className="text-sm font-medium text-muted-foreground">
+                          <div className="text-sm font-semibold text-gray-700 mb-1">
                             {stat.label}
                           </div>
-                          <div className="text-xs text-muted-foreground mt-1">
+                          <div className="text-xs text-gray-600">
                             {stat.description}
                           </div>
                         </div>

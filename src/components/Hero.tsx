@@ -79,7 +79,7 @@ export function Hero() {
               <div className="text-sm text-muted-foreground">Year Established</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-primary">109,980+</div>
+              <div className="text-3xl font-bold text-primary">26,924+</div>
               <div className="text-sm text-muted-foreground">Projects Completed</div>
             </div>
             <div className="space-y-2">

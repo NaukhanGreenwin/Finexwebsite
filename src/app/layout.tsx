@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: "Finex Development | Leaders in Construction & Facility Maintenance",
     template: "%s | Finex Development",
   },
-  description: "Professional construction and facility maintenance services in Mississauga, ON. Over 20 years of experience with 109,980+ projects completed. Emergency repairs, preventative maintenance, and comprehensive facility management.",
+  description: "Professional construction and facility maintenance services in Mississauga, ON. Over 20 years of experience with 26,924+ projects completed. Emergency repairs, preventative maintenance, and comprehensive facility management.",
   keywords: [
     "construction",
     "facility maintenance",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     locale: "en_CA",
     url: "https://finexdevelopment.com",
     title: "Finex Development | Leaders in Construction & Facility Maintenance",
-    description: "Professional construction and facility maintenance services in Mississauga, ON. Over 20 years of experience with 109,980+ projects completed.",
+    description: "Professional construction and facility maintenance services in Mississauga, ON. Over 20 years of experience with 26,924+ projects completed.",
     siteName: "Finex Development",
     images: [
       {
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Finex Development | Leaders in Construction & Facility Maintenance",
-    description: "Professional construction and facility maintenance services in Mississauga, ON. Over 20 years of experience with 109,980+ projects completed.",
+    description: "Professional construction and facility maintenance services in Mississauga, ON. Over 20 years of experience with 26,924+ projects completed.",
   },
   robots: {
     index: true,

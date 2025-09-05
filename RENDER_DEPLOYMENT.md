@@ -46,3 +46,4 @@ If you need to add environment variables later:
 - Add any required variables
 
 That's it! Your site should deploy automatically. 🚀
+

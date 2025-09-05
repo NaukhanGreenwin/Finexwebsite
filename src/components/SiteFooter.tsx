@@ -138,12 +138,9 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border/50">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} Finex Development. All rights reserved.
-            </p>
-            <p className="text-sm text-muted-foreground mt-2 md:mt-0">
-              Built with ❤️ for our community
             </p>
           </div>
         </div>

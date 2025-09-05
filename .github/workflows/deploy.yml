@@ -16,11 +16,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./finex-website
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -28,11 +25,22 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Check directory structure
+        run: |
+          echo "Repository root contents:"
+          ls -la
+          echo "Looking for finex-website directory:"
+          ls -la finex-website/ || echo "finex-website directory not found"
+
       - name: Install dependencies
-        run: npm ci
+        run: |
+          cd finex-website
+          npm ci
 
       - name: Build Next.js app
-        run: npm run build
+        run: |
+          cd finex-website
+          npm run build
         env:
           NODE_ENV: production
 
@@ -44,7 +52,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./finex-website/out
+          path: finex-website/out
 
   deploy:
     environment:

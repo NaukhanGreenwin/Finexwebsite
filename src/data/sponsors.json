@@ -9,7 +9,7 @@
     "id": "st-matthew",
     "title": "St. Matthew School",
     "body": "St. Matthew Catholic Elementary School is an exciting place to learn and grow for children from Junior Kindergarten to the 8th grade!",
-    "image": "/images/sponsors/st-matthew-school.gif"
+    "image": "/images/sponsors/st-matthew-school.png"
   },
   {
     "id": "royal-canadian-legion",
@@ -22,5 +22,23 @@
     "title": "Hospital Activity Book",
     "body": "The Hospital Activity Book has been successful for over 23 years with well over one million copies of the book provided to children across Canada in this time.",
     "image": "/images/sponsors/hospital-activity-book.png"
+  },
+  {
+    "id": "sponsor-1",
+    "title": "Sponsor 1",
+    "body": "Supporting our community through various initiatives and programs.",
+    "image": "/images/sponsors/sponsor-1.png"
+  },
+  {
+    "id": "sponsor-2",
+    "title": "Sponsor 2",
+    "body": "Committed to excellence and community development.",
+    "image": "/images/sponsors/sponsor-2.png"
+  },
+  {
+    "id": "sponsor-3",
+    "title": "Sponsor 3",
+    "body": "Dedicated to making a positive impact in our community.",
+    "image": "/images/sponsors/sponsor-3.jpg"
   }
 ]

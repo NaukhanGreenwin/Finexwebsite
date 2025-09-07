@@ -1,15 +1,12 @@
 {
-  "intro": "We are industry leaders in construction and facility maintenance, committed to delivering exceptional service and innovative solutions. Our experienced team combines technical expertise with a customer-first approach to ensure every project meets the highest standards of quality and reliability.",
-  "description": "With decades of experience in the industry, we have built a reputation for excellence through consistent delivery of high-quality services. Our comprehensive approach to facility management and construction ensures that every client receives tailored solutions that meet their specific needs and exceed expectations.",
+  "established": "Established in 2002, Finex Development Inc.",
+  "paragraph1": "has been providing integrated Facilities Maintenance Management services at Competitive prices to fulfill its customers' maintenance and renovation needs.",
+  "paragraph2": "We are committed to be a company that offers all sought-after services, so companies can focus on higher level concerns while effectively reducing operational costs and save money.",
+  "paragraph3": "With years of experience offering cost-effective facilities management solutions to multi-site, retailers, and chain stores. Our highly skilled contractors understand the unique demands of various industries; the pace of change; the value of brand equity; and the desire for adaptable, brand identity with local codes and standards. In shopping mall build-outs, we optimize existing and common spaces, as well as shared services. The result not only ends with simple, newer surroundings, but also more functional and efficient spaces.",
+  "paragraph4": "Customer Satisfaction is our upmost goal. We work one-on-one with each of our client to have a thorough understanding of the specific needs and design a flexible program that will work best for them.",
   "stats": {
     "yearEstablished": 2002,
     "projectsCompleted": 26924,
     "contractorsAppointed": 440
-  },
-  "values": [
-    "Quality craftsmanship in every project",
-    "Reliable and timely service delivery",
-    "Customer satisfaction as our top priority",
-    "Continuous innovation and improvement"
-  ]
+  }
 }

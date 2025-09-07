@@ -1,0 +1,56 @@
+/* About section styling */
+.about-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.about-heading {
+  color: #002B54;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.about-underline {
+  width: 150px;
+  height: 6px;
+  background-color: #F5A9B8;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+.about-text strong {
+  font-weight: 600;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-image-container {
+    display: none;
+  }
+}

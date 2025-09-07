@@ -1,0 +1,49 @@
+/* Credo section styling */
+.credo-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.credo-heading {
+  color: #002B54;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.credo-underline {
+  width: 150px;
+  height: 6px;
+  background-color: #F5A9B8;
+  margin: 0 auto 4rem;
+}
+
+.credo-item {
+  margin-bottom: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.credo-title {
+  color: #002B54;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.credo-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.credo-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import "@/app/services.css";
-import services from "@/data/services.json";
+// import services from "@/data/services.json";
 import { getImagePath } from "@/lib/image-utils";
 
 export function ServicesGrid() {
@@ -23,7 +23,7 @@ export function ServicesGrid() {
         <ul className="services-description">
           <li className="services-bullet">
             Finex Development Inc. believes that the key to overall customer satisfaction is providing the most reliable and affordable services. We
-            would like to think of ourselves as a "one point of contact" company.
+            would like to think of ourselves as a &ldquo;one point of contact&rdquo; company.
           </li>
           <li className="services-bullet">
             Currently, our coverage is in all 10 provinces and territories Canada wide and unparalleled support of more than 440 carefully
@@ -196,7 +196,7 @@ export function ServicesGrid() {
             <div className="highlight-content">
               <h3 className="highlight-title">Preventative Maintenance/Inspections</h3>
               <p className="highlight-description">
-                To avoid major issues from arising and keep clients' facilities in exceptional condition, Finex Development Inc. can suggest a preventive maintenance schedule. Our preventive maintenance program includes lighting, general maintenance and detailed inspections.
+                To avoid major issues from arising and keep clients&apos; facilities in exceptional condition, Finex Development Inc. can suggest a preventive maintenance schedule. Our preventive maintenance program includes lighting, general maintenance and detailed inspections.
               </p>
             </div>
           </div>

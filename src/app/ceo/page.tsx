@@ -25,8 +25,8 @@ export default function CEOPage() {
               <div className="ceo-text-container">
                 <p className="ceo-text">
                   As President and CEO of Finex Development Inc., I would like to offer you my personal 
-                  "thank you" for taking the time to review our company. In addition, I invite you to review 
-                  our website in order to get to know Finex Development Inc. I'd like to briefly share with 
+                  &ldquo;thank you&rdquo; for taking the time to review our company. In addition, I invite you to review 
+                  our website in order to get to know Finex Development Inc. I&apos;d like to briefly share with 
                   you why we started this company and what we believe in as our guiding principles.
                 </p>
                 
@@ -48,7 +48,7 @@ export default function CEOPage() {
                 <p className="ceo-text">
                   Client Engagement: every project we undertake must create long-term value for the 
                   client. We want to significantly improve the overall performance of their organization; 
-                  this is why we would like to think of ourselves as a "One point of contact" company. 
+                  this is why we would like to think of ourselves as a &ldquo;One point of contact&rdquo; company. 
                   This simply means that our clients can focus on improving/expending their business 
                   while we take care of all handyman, construction and maintenance needs. Our 
                   extensive experience, industry knowledge and affordable rates have enabled us to 
@@ -56,7 +56,7 @@ export default function CEOPage() {
                 </p>
                 
                 <p className="ceo-text">
-                  That's who we are, and that's what we do. I hope that Finex Development Inc. will have 
+                  That&apos;s who we are, and that&apos;s what we do. I hope that Finex Development Inc. will have 
                   the opportunity to serve as your partner as well.
                 </p>
                 

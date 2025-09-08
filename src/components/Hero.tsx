@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { getImagePath } from "@/lib/image-utils";
 
 export function Hero() {
   const handleScrollToSection = (sectionId: string) => {
@@ -18,7 +19,7 @@ export function Hero() {
       {/* Hero Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/Hero.png"
+          src={getImagePath("/Hero.png")}
           alt="Hero Background"
           fill
           className="object-cover object-center"

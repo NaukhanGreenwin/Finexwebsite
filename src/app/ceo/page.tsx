@@ -1,6 +1,7 @@
 import { SiteHeader } from "@/components/SiteHeader";
 import Image from "next/image";
 import { Metadata } from "next";
+import { getImagePath } from "@/lib/image-utils";
 import "@/app/ceo.css";
 
 export const metadata: Metadata = {
@@ -69,7 +70,7 @@ export default function CEOPage() {
               {/* Right Column - Image */}
               <div className="ceo-image-container">
                 <Image
-                  src="/images/CEO pic.png"
+                  src={getImagePath("/images/CEO pic.png")}
                   alt="Peter Fiwek, CEO of Finex Development"
                   width={600}
                   height={700}

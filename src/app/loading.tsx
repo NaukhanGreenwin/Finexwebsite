@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getImagePath } from "@/lib/image-utils";
 
 export default function Loading() {
   return (
@@ -8,7 +9,7 @@ export default function Loading() {
         <div className="flex items-center space-x-3">
           <div className="h-12 w-12 relative animate-pulse">
             <Image
-              src="/images/company-logo.png"
+              src={getImagePath("/images/company-logo.png")}
               alt="Finex Development Logo"
               fill
               className="object-contain"

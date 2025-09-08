@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Home, ArrowLeft } from "lucide-react";
+import { getImagePath } from "@/lib/image-utils";
 
 export default function NotFound() {
   return (
@@ -13,7 +14,7 @@ export default function NotFound() {
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="h-10 w-10 relative">
               <Image
-                src="/images/company-logo.png"
+                src={getImagePath("/images/company-logo.png")}
                 alt="Finex Development Logo"
                 fill
                 className="object-contain"

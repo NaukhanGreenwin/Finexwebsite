@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { getImagePath } from "@/lib/image-utils";
 import credo from "@/data/credo.json";
 import "@/app/credo.css";
 
@@ -19,7 +20,7 @@ export function CredoList() {
             <h3 className="credo-title">
               <span>Commitment</span>
               <Image 
-                src="/images/Commitment.png" 
+                src={getImagePath("/images/Commitment.png")} 
                 alt="Commitment Icon" 
                 width={40} 
                 height={40} 
@@ -36,7 +37,7 @@ export function CredoList() {
             <h3 className="credo-title">
               <span>Our Staff & Technicians</span>
               <Image 
-                src="/images/Our Staff & Technicians.png" 
+                src={getImagePath("/images/Our Staff & Technicians.png")} 
                 alt="Staff Icon" 
                 width={40} 
                 height={40} 
@@ -53,7 +54,7 @@ export function CredoList() {
             <h3 className="credo-title">
               <span>Availability</span>
               <Image 
-                src="/images/Availability.png" 
+                src={getImagePath("/images/Availability.png")} 
                 alt="Availability Icon" 
                 width={40} 
                 height={40} 
@@ -70,7 +71,7 @@ export function CredoList() {
             <h3 className="credo-title">
               <span>Competitive Rates</span>
               <Image 
-                src="/images/Competitive Rates.png" 
+                src={getImagePath("/images/Competitive Rates.png")} 
                 alt="Rates Icon" 
                 width={40} 
                 height={40} 

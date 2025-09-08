@@ -5,6 +5,7 @@ import { Canvas, useFrame, extend } from '@react-three/fiber';
 import { shaderMaterial } from '@react-three/drei';
 import * as THREE from 'three';
 import Image from 'next/image';
+import { getImagePath } from '@/lib/image-utils';
 
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
@@ -230,7 +231,7 @@ function ShaderBackground() {
       {/* Hero Background Image */}
       <div ref={imageRef} className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/images/Hero.png"
+          src={getImagePath("/images/Hero.png")}
           alt="Hero Background"
           fill
           className="object-cover object-center"

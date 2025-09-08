@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { getImagePath } from "@/lib/image-utils";
 import about from "@/data/about.json";
 import "@/app/about.css";
 import { StatsBanner } from "@/components/StatsBanner";
@@ -33,7 +34,7 @@ export function AboutStats() {
             
             <div className="about-image-container">
               <Image 
-                src="/images/About.png"
+                src={getImagePath("/images/About.png")}
                 alt="About Finex Development"
                 width={600}
                 height={600}

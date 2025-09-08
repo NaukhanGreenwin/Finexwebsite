@@ -37,55 +37,55 @@ export function ServicesGrid() {
         <div className="services-grid">
           <div className="service-item">
             <Image 
-              src="/file.svg" 
+              src={getImagePath("/images/services/Plumbing.png")}
               alt="Plumbing" 
-              width={50} 
-              height={50} 
-              className="service-icon service-icon-pink" 
+              width={80} 
+              height={80} 
+              className="service-icon" 
             />
             <span className="service-name">Plumbing</span>
           </div>
           
           <div className="service-item">
             <Image 
-              src="/file.svg" 
+              src={getImagePath("/images/services/Handyman Work.png")}
               alt="Handyman Works" 
-              width={50} 
-              height={50} 
-              className="service-icon service-icon-pink" 
+              width={80} 
+              height={80} 
+              className="service-icon" 
             />
             <span className="service-name">Handyman Works</span>
           </div>
           
           <div className="service-item">
             <Image 
-              src="/file.svg" 
+              src={getImagePath("/images/services/Electrical.png")}
               alt="Electrical" 
-              width={50} 
-              height={50} 
-              className="service-icon service-icon-pink" 
+              width={80} 
+              height={80} 
+              className="service-icon" 
             />
             <span className="service-name">Electrical</span>
           </div>
           
           <div className="service-item">
             <Image 
-              src="/file.svg" 
+              src={getImagePath("/images/services/Carpentry.png")}
               alt="Carpentry" 
-              width={50} 
-              height={50} 
-              className="service-icon service-icon-pink" 
+              width={80} 
+              height={80} 
+              className="service-icon" 
             />
             <span className="service-name">Carpentry</span>
           </div>
           
           <div className="service-item">
             <Image 
-              src="/file.svg" 
+              src={getImagePath("/images/services/Flooring.png")}
               alt="Flooring" 
-              width={50} 
-              height={50} 
-              className="service-icon service-icon-pink" 
+              width={80} 
+              height={80} 
+              className="service-icon" 
             />
             <span className="service-name">Flooring</span>
           </div>
@@ -94,55 +94,55 @@ export function ServicesGrid() {
         <div className="services-grid">
           <div className="service-item">
             <Image 
-              src="/file.svg" 
+              src={getImagePath("/images/services/Painting.png")}
               alt="Painting" 
-              width={50} 
-              height={50} 
-              className="service-icon service-icon-pink" 
+              width={80} 
+              height={80} 
+              className="service-icon" 
             />
             <span className="service-name">Painting</span>
           </div>
           
           <div className="service-item">
             <Image 
-              src="/file.svg" 
-              alt="Drywall Plaster" 
-              width={50} 
-              height={50} 
-              className="service-icon service-icon-pink" 
+              src={getImagePath("/images/services/Drywall Pastering.png")}
+              alt="Drywall Plastering" 
+              width={80} 
+              height={80} 
+              className="service-icon" 
             />
-            <span className="service-name">Drywall Plaster</span>
+            <span className="service-name">Drywall Plastering</span>
           </div>
           
           <div className="service-item">
             <Image 
-              src="/file.svg" 
+              src={getImagePath("/images/services/HVAC.png")}
               alt="HVAC" 
-              width={50} 
-              height={50} 
-              className="service-icon service-icon-pink" 
+              width={80} 
+              height={80} 
+              className="service-icon" 
             />
             <span className="service-name">HVAC</span>
           </div>
           
           <div className="service-item">
             <Image 
-              src="/file.svg" 
+              src={getImagePath("/images/services/Landscaping.png")}
               alt="Landscaping" 
-              width={50} 
-              height={50} 
-              className="service-icon service-icon-pink" 
+              width={80} 
+              height={80} 
+              className="service-icon" 
             />
             <span className="service-name">Landscaping</span>
           </div>
           
           <div className="service-item">
             <Image 
-              src="/file.svg" 
+              src={getImagePath("/images/services/Restoration.png")}
               alt="Restoration" 
-              width={50} 
-              height={50} 
-              className="service-icon service-icon-pink" 
+              width={80} 
+              height={80} 
+              className="service-icon" 
             />
             <span className="service-name">Restoration</span>
           </div>
@@ -153,7 +153,7 @@ export function ServicesGrid() {
           {/* Integrated Facilities Management */}
           <div className="highlight-card">
             <Image 
-              src={getImagePath("/images/highlights/Integrated Facilities Management.jpg")}
+              src={getImagePath("/images/services/Integrated Facilities Management.png")}
               alt="Integrated Facilities Management"
               width={400}
               height={300}
@@ -170,7 +170,7 @@ export function ServicesGrid() {
           {/* On-The-Go Maintenance */}
           <div className="highlight-card">
             <Image 
-              src={getImagePath("/images/highlights/On-The-Go Maintenance.jpg")}
+              src={getImagePath("/images/services/On-The-Go Maintenance.png")}
               alt="On-The-Go Maintenance"
               width={400}
               height={300}
@@ -187,7 +187,7 @@ export function ServicesGrid() {
           {/* Preventative Maintenance/Inspections */}
           <div className="highlight-card">
             <Image 
-              src={getImagePath("/images/highlights/Preventative Maintenance and Inspections.jpg")}
+              src={getImagePath("/images/services/Preventative-Maintenance-Inspections.png")}
               alt="Preventative Maintenance/Inspections"
               width={400}
               height={300}

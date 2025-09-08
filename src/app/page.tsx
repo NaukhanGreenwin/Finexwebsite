@@ -7,7 +7,6 @@ import { CredoList } from "@/components/CredoList";
 import { ClientLogoWall } from "@/components/ClientLogoWall";
 import { SponsorCards } from "@/components/SponsorCards";
 import { ContactSection } from "@/components/ContactSection";
-import { SiteFooter } from "@/components/SiteFooter";
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
         <SponsorCards />
         <ContactSection />
       </main>
-      <SiteFooter />
     </div>
   );
 }

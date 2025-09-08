@@ -1,13 +1,10 @@
 import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { ArrowLeft, CheckCircle } from "lucide-react";
+import Image from "next/image";
 import { Metadata } from "next";
+import "@/app/ceo.css";
 
 export const metadata: Metadata = {
-  title: "From CEO | Finex Development",
+  title: "A Message from CEO | Finex Development",
   description: "A message from our CEO about our company's vision, values, and commitment to excellence in construction and facility maintenance.",
 };
 
@@ -15,116 +12,74 @@ export default function CEOPage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
-      <main className="py-20">
-        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          {/* Back button */}
-          <div className="mb-8">
-            <Button variant="ghost" asChild>
-              <Link href="/" className="group">
-                <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
-                Back to Home
-              </Link>
-            </Button>
-          </div>
-
-          <Card className="border-border/50">
-            <CardContent className="p-8 lg:p-12">
-              <article className="prose prose-lg max-w-none">
-                <header className="mb-8">
-                  <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">
-                    A Message From Our CEO
-                  </h1>
-                  <div className="h-1 w-20 bg-primary rounded-full"></div>
-                </header>
-
-                <div className="space-y-6 text-muted-foreground leading-relaxed">
-                  <p className="text-lg">
-                    Dear Valued Clients and Partners,
-                  </p>
-
-                  <p>
-                    It is my pleasure to welcome you to our company and share our vision for excellence in construction and facility maintenance services. Since our establishment in 2002, we have been committed to building lasting relationships with our clients through exceptional service delivery and unwavering dedication to quality.
-                  </p>
-
-                  <div className="my-8">
-                    <h2 className="text-2xl font-bold text-foreground mb-4">Our Journey</h2>
-                    <p>
-                      Over the past two decades, we have grown from a small local operation to a trusted leader in the industry. This growth has been possible because of our core principles:
-                    </p>
-                    
-                    <ul className="mt-4 space-y-3">
-                      {[
-                        "Quality First: We never compromise on the quality of our work or materials",
-                        "Customer Focus: Every decision we make is centered around our clients' needs",
-                        "Innovation: We continuously adopt new technologies and methods to improve our services",
-                        "Integrity: We conduct business with honesty, transparency, and ethical practices"
-                      ].map((principle, index) => (
-                        <li key={index} className="flex items-start space-x-3">
-                          <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                          <span><strong>{principle.split(":")[0]}:</strong> {principle.split(":")[1]}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="my-8">
-                    <h2 className="text-2xl font-bold text-foreground mb-4">Our Commitment to Excellence</h2>
-                    <p>
-                      Our team of skilled professionals brings years of experience and expertise to every project. We understand that each client has unique needs, and we pride ourselves on delivering customized solutions that exceed expectations.
-                    </p>
-                    
-                    <p>
-                      Whether you need emergency repairs, preventative maintenance, or comprehensive facility management, we are here to serve you with the same dedication and professionalism that has made us a trusted name in the industry.
-                    </p>
-                  </div>
-
-                  <div className="my-8">
-                    <h2 className="text-2xl font-bold text-foreground mb-4">Looking Forward</h2>
-                    <p>
-                      As we continue to grow and evolve, our commitment to excellence remains unchanged. We are excited about the opportunities ahead and look forward to serving you with the highest standards of quality and service.
-                    </p>
-                    
-                    <p>
-                      Thank you for choosing us as your trusted partner in construction and facility maintenance.
-                    </p>
-                  </div>
-
-                  <div className="mt-12 pt-8 border-t border-border/50">
-                    <div className="text-center">
-                      <p className="mb-2">Sincerely,</p>
-                      <div className="text-xl font-bold text-foreground">Peter Fiwek</div>
-                      <div className="text-sm text-muted-foreground">Chief Executive Officer</div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </CardContent>
-          </Card>
-
-          {/* Call to action */}
-          <div className="mt-12 text-center">
-            <Card className="border-border/50 bg-muted/30">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Ready to Work With Us?
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  Get in touch today to discuss your project needs and discover how we can help.
+      <main>
+        <section className="ceo-section">
+          <div className="ceo-container">
+            {/* CEO Heading */}
+            <h1 className="ceo-heading">A Message from CEO</h1>
+            <div className="ceo-underline"></div>
+            
+            {/* CEO Content */}
+            <div className="ceo-content">
+              {/* Left Column - Text */}
+              <div className="ceo-text-container">
+                <p className="ceo-text">
+                  As President and CEO of Finex Development Inc., I would like to offer you my personal 
+                  "thank you" for taking the time to review our company. In addition, I invite you to review 
+                  our website in order to get to know Finex Development Inc. I'd like to briefly share with 
+                  you why we started this company and what we believe in as our guiding principles.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild>
-                    <Link href="/#contact">Get a Quote</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/#services">View Our Services</Link>
-                  </Button>
+                
+                <p className="ceo-text">
+                  Finex Development Inc is a Canadian nationwide Construction and Facility 
+                  Maintenance Company focusing on a wide spectrum of services, from small 
+                  handyman services to large construction projects. Over the last several years, we 
+                  have focused on delivering great services with skilled and licensed professionals in all 
+                  areas. The familiarity of new technologies and the use of the newest methods as well 
+                  as equipment, guarantee that any project will be completed with excellence, on time, 
+                  and on budget.
+                </p>
+                
+                <p className="ceo-text">
+                  Our business philosophy is based on several fundamental principles which we follow 
+                  religiously.
+                </p>
+                
+                <p className="ceo-text">
+                  Client Engagement: every project we undertake must create long-term value for the 
+                  client. We want to significantly improve the overall performance of their organization; 
+                  this is why we would like to think of ourselves as a "One point of contact" company. 
+                  This simply means that our clients can focus on improving/expending their business 
+                  while we take care of all handyman, construction and maintenance needs. Our 
+                  extensive experience, industry knowledge and affordable rates have enabled us to 
+                  expand even during difficult economic times.
+                </p>
+                
+                <p className="ceo-text">
+                  That's who we are, and that's what we do. I hope that Finex Development Inc. will have 
+                  the opportunity to serve as your partner as well.
+                </p>
+                
+                <div className="ceo-signature">
+                  <p className="ceo-text">Best Regards,</p>
+                  <p className="ceo-name">Peter Fiwek</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+              
+              {/* Right Column - Image */}
+              <div className="ceo-image-container">
+                <Image
+                  src="/images/CEO pic.png"
+                  alt="Peter Fiwek, CEO of Finex Development"
+                  width={600}
+                  height={700}
+                  className="ceo-image"
+                />
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

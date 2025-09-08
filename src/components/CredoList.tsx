@@ -19,10 +19,10 @@ export function CredoList() {
             <h3 className="credo-title">
               <span>Commitment</span>
               <Image 
-                src="/file.svg" 
+                src="/images/Commitment.png" 
                 alt="Commitment Icon" 
-                width={50} 
-                height={50} 
+                width={40} 
+                height={40} 
                 className="credo-icon" 
               />
             </h3>
@@ -36,10 +36,10 @@ export function CredoList() {
             <h3 className="credo-title">
               <span>Our Staff & Technicians</span>
               <Image 
-                src="/file.svg" 
+                src="/images/Our Staff & Technicians.png" 
                 alt="Staff Icon" 
-                width={50} 
-                height={50} 
+                width={40} 
+                height={40} 
                 className="credo-icon" 
               />
             </h3>
@@ -53,10 +53,10 @@ export function CredoList() {
             <h3 className="credo-title">
               <span>Availability</span>
               <Image 
-                src="/file.svg" 
+                src="/images/Availability.png" 
                 alt="Availability Icon" 
-                width={50} 
-                height={50} 
+                width={40} 
+                height={40} 
                 className="credo-icon" 
               />
             </h3>
@@ -70,10 +70,10 @@ export function CredoList() {
             <h3 className="credo-title">
               <span>Competitive Rates</span>
               <Image 
-                src="/file.svg" 
+                src="/images/Competitive Rates.png" 
                 alt="Rates Icon" 
-                width={50} 
-                height={50} 
+                width={40} 
+                height={40} 
                 className="credo-icon" 
               />
             </h3>

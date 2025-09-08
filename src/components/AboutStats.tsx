@@ -33,8 +33,8 @@ export function AboutStats() {
             
             <div className="about-image-container">
               <Image 
-                src="/images/company-logo.png"
-                alt="Construction worker"
+                src="/images/About.png"
+                alt="About Finex Development"
                 width={600}
                 height={600}
                 className="about-image"

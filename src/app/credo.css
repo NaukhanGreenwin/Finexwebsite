@@ -34,12 +34,18 @@
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .credo-icon {
-  width: 50px;
-  height: 50px;
-  margin-right: 1rem;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.credo-title:hover .credo-icon {
+  transform: scale(1.1);
 }
 
 .credo-description {

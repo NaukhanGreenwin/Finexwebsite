@@ -1,15 +1,9 @@
 [
   {
-    "id": "hospital-activity-book",
-    "title": "Hospital Activity Book",
-    "body": "The Hospital Activity Book has been successful for over 23 years with well over one million copies of the book provided to children across Canada in this time.",
-    "image": "/images/sponsors/hospital-activity-book.png"
-  },
-  {
-    "id": "royal-canadian-legion",
-    "title": "Royal Canadian Legion",
-    "body": "Royal Canadian Legion is committed to making a difference in the lives of Veterans and their families, providing essential services in our communities, and remembering the men who sacrificed for our country.",
-    "image": "/images/sponsors/royal-canadian-legion.jpg"
+    "id": "jumpstart",
+    "title": "Canadian Tire Jumpstart",
+    "body": "At Jumpstart, we are committed to ensuring kids in need have equal access to sports and physical activity – an equal chance to be their best.",
+    "image": "/images/sponsors/canadian-tire-jumpstart.png"
   },
   {
     "id": "st-matthew",
@@ -18,9 +12,15 @@
     "image": "/images/sponsors/st-matthew-school.png"
   },
   {
-    "id": "jumpstart",
-    "title": "Canadian Tire Jumpstart",
-    "body": "At Jumpstart, we are committed to ensuring kids in need have equal access to sports and physical activity – an equal chance to be their best.",
-    "image": "/images/sponsors/canadian-tire-jumpstart.png"
+    "id": "royal-canadian-legion",
+    "title": "Royal Canadian Legion",
+    "body": "Royal Canadian Legion is committed to making a difference in the lives of Veterans and their families, providing essential services in our communities, and remembering the men who sacrificed for our country.",
+    "image": "/images/sponsors/royal-canadian-legion.jpg"
+  },
+  {
+    "id": "hospital-activity-book",
+    "title": "Hospital Activity Book",
+    "body": "The Hospital Activity Book has been successful for over 23 years with well over one million copies of the book provided to children across Canada in this time.",
+    "image": "/images/sponsors/hospital-activity-book.png"
   }
 ]

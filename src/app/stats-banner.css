@@ -9,12 +9,13 @@
 
 .stats-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 1200px;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
+  padding: 0 2rem;
 }
 
 .stat-item {
@@ -22,37 +23,67 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: 33.33%;
+  text-align: center;
 }
 
 .stat-item:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: -50px;
-  top: 0;
-  height: 100%;
+  right: 0;
+  top: 20%;
+  height: 60%;
   width: 1px;
   background-color: #fff;
 }
 
 .stat-value {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   color: #002B54;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   line-height: 1;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.4rem;
 }
 
-.stat-label {
-  font-size: 1.5rem;
-  color: #002B54;
+.stat-value::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #002B54;
+}
+
+.stat-label-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  max-width: 200px;
+}
+
+.stat-label-top {
+  font-size: 1.25rem;
+  color: #002B54;
+  margin-bottom: 0.15rem;
+}
+
+.stat-label-bottom {
+  font-size: 1.25rem;
+  color: #002B54;
 }
 
 @media (max-width: 768px) {
   .stats-container {
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.5rem;
+  }
+  
+  .stat-item {
+    width: 100%;
   }
   
   .stat-item:not(:last-child)::after {
@@ -63,7 +94,8 @@
     font-size: 3.5rem;
   }
   
-  .stat-label {
-    font-size: 1.25rem;
+  .stat-label-top,
+  .stat-label-bottom {
+    font-size: 1rem;
   }
 }

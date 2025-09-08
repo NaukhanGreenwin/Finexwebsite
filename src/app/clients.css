@@ -1,0 +1,99 @@
+/* Clients section styling */
+.clients-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.clients-heading {
+  color: #002B54;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.clients-underline {
+  width: 150px;
+  height: 6px;
+  background-color: #F5A9B8;
+  margin: 0 auto 3rem;
+}
+
+.clients-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.clients-grid-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 180px;
+}
+
+.client-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Specific logo adjustments */
+.client-logo-container:nth-child(1) .client-logo {
+  max-width: 90%;
+}
+
+.client-logo-container:nth-child(2) .client-logo {
+  max-width: 85%;
+}
+
+.client-logo-container:nth-child(3) .client-logo {
+  max-width: 100%;
+}
+
+.client-logo-container:nth-child(4) .client-logo {
+  max-width: 100%;
+}
+
+.client-logo-container:nth-child(5) .client-logo {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .clients-grid-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .client-logo-container {
+    width: 150px;
+  }
+}
+
+@media (max-width: 640px) {
+  .clients-grid-row {
+    gap: 1rem;
+  }
+  
+  .client-logo-container {
+    width: 120px;
+    height: 50px;
+  }
+  
+  .clients-heading {
+    font-size: 2.5rem;
+  }
+}

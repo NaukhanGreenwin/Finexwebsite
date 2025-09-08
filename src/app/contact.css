@@ -1,0 +1,103 @@
+/* Contact section styling */
+.contact-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.contact-heading {
+  color: #002B54;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.contact-underline {
+  width: 150px;
+  height: 6px;
+  background-color: #F5A9B8;
+  margin: 0 auto 3rem;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.map-container {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 3rem;
+  border: 1px solid #eaeaea;
+}
+
+.contact-info-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.contact-section-title {
+  color: #002B54;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.contact-text {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.contact-bold {
+  font-weight: 600;
+}
+
+.contact-form {
+  margin-top: 1.5rem;
+}
+
+.form-row {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 0;
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  outline: none;
+  border-bottom: 2px solid #002B54;
+}
+
+.contact-employment {
+  margin-top: 2rem;
+}
+
+.contact-quote {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #F5A9B8;
+}
+
+.contact-quote-text {
+  color: #002B54;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .contact-info-container {
+    grid-template-columns: 1fr;
+  }
+}

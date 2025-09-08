@@ -9,31 +9,34 @@
   "phones": [
     {
       "type": "main",
-      "number": "(905) 555-0123",
+      "number": "+1(905) 826-1808",
       "label": "Main Office"
     },
     {
-      "type": "emergency",
-      "number": "(905) 555-0124",
-      "label": "24/7 Emergency"
+      "type": "tollfree",
+      "number": "+1(888) 513-4639",
+      "label": "Toll Free"
     }
   ],
   "emails": [
     {
       "type": "general",
-      "address": "info@finexdevelopment.com",
+      "address": "General@finexdevelopment.com",
       "label": "General Inquiries"
     },
     {
-      "type": "quotes",
-      "address": "quotes@finexdevelopment.com",
-      "label": "Project Quotes"
+      "type": "hr",
+      "address": "HR@finexdevelopment.com",
+      "label": "Human Resources"
     }
   ],
-  "hours": {
-    "weekdays": "8:00 AM - 6:00 PM",
-    "weekends": "9:00 AM - 4:00 PM",
-    "emergency": "24/7 Available"
+  "inquiries": {
+    "phone": "1-888-513-4639",
+    "text": "For any inquiries, questions or commendations, please call: 1-888-513-4639 or fill out the following form"
   },
-  "quote": "Get your free consultation and quote today!"
+  "employment": {
+    "text": "To apply for a job with Finex Development, please send a cover letter together with your Resume to:",
+    "email": "HR@finexdevelopment.com"
+  },
+  "quote": "Get a quote: +1(888) 513-4639"
 }

@@ -61,22 +61,39 @@
   flex-direction: column;
   align-items: center;
   width: 150px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.service-item:hover {
+  background-color: rgba(245, 169, 184, 0.05);
 }
 
 .service-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 0.75rem;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  mix-blend-mode: multiply; /* This helps with white backgrounds */
+  filter: contrast(1.1); /* Enhance the contrast slightly */
+}
+
+.service-item:hover .service-icon {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(245, 169, 184, 0.2);
 }
 
 .service-name {
   text-align: center;
   font-weight: 600;
   color: #002B54;
-}
-
-.service-icon-pink {
-  color: #F5A9B8;
+  font-size: 0.95rem;
 }
 
 .highlights-container {
@@ -93,14 +110,26 @@
 
 .highlight-card {
   border: 1px solid #e5e7eb;
-  border-radius: 0;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(245, 169, 184, 0.15);
 }
 
 .highlight-image {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.highlight-card:hover .highlight-image {
+  transform: scale(1.03);
 }
 
 .highlight-content {

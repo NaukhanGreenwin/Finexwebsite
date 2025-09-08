@@ -9,17 +9,26 @@ export function StatsBanner() {
       <div className="stats-container">
         <div className="stat-item">
           <div className="stat-value">{about.stats.yearEstablished}</div>
-          <div className="stat-label">Year Established</div>
+          <div className="stat-label-container">
+            <div className="stat-label-top">Year</div>
+            <div className="stat-label-bottom">Established</div>
+          </div>
         </div>
         
         <div className="stat-item">
-          <div className="stat-value">{about.stats.projectsCompleted.toLocaleString()}</div>
-          <div className="stat-label">Projects Completed</div>
+          <div className="stat-value">{about.stats.projectsCompleted}</div>
+          <div className="stat-label-container">
+            <div className="stat-label-top">Projects</div>
+            <div className="stat-label-bottom">Completed</div>
+          </div>
         </div>
         
         <div className="stat-item">
           <div className="stat-value">{about.stats.contractorsAppointed}</div>
-          <div className="stat-label">Contractors Appointed</div>
+          <div className="stat-label-container">
+            <div className="stat-label-top">Contractors</div>
+            <div className="stat-label-bottom">Appointed</div>
+          </div>
         </div>
       </div>
     </section>

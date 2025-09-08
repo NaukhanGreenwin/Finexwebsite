@@ -38,6 +38,8 @@ jobs:
       - name: Install dependencies
         run: |
           echo "Current directory: $(pwd)"
+          cd finex-website
+          echo "Changed to finex-website directory: $(pwd)"
           echo "Package.json contents:"
           cat package.json
           npm ci
@@ -45,6 +47,8 @@ jobs:
       - name: Build Next.js app
         run: |
           echo "Current directory: $(pwd)"
+          cd finex-website
+          echo "Changed to finex-website directory: $(pwd)"
           echo "Running npm run build..."
           npm run build 2>&1 | tee build.log
           echo "Build completed with exit code: $?"
@@ -67,7 +71,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+          path: finex-website/out
 
   deploy:
     environment:
